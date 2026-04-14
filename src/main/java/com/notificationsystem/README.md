@@ -32,17 +32,17 @@ An AI-powered backend system that dynamically determines notification priority a
 
 ##  Architecture
 
-Controller → Service → Repository → Database
-                                                            ↓
-                                                    AI Decision Engine
-                                                            ↓
-                                                    Delivery Strategy (EMAIL / SMS / PUSH)
 
+Controller → Service → Repository → Database
+↓
+AI Decision Engine
+↓
+Delivery Strategy (EMAIL / SMS / PUSH)
 ---
 
 ##  Setup Instructions
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/your-username/ai-notification-system.git
@@ -51,27 +51,26 @@ cd ai-notification-system
 
 ---
 
-### 2️⃣ Set Environment Variables
+### 2. Set Environment Variables
 
 ####  Windows
 
 ```bash
-setx GROQ_API_KEY "5daSw9i50KYtbWeghfXEWGdyb3FYHQzgH4gOC5aD1cVACI2pr2Ne"
-setx GROQ_API_URL "https://api.groq.com/openai/v1/chat/completions"
+setx GROQ_API_KEY "your_api_key_here"
+ GROQ_API_URL "https://api.groq.com/openai/v1/chat/completions"
 ```
 
 ####  Mac/Linux
 
 ```bash
-export GROQ_API_KEY="5daSw9i50KYtbWeghfXEWGdyb3FYHQzgH4gOC5aD1cVACI2pr2Ne"
+export GROQ_API_KEY="your_api_key_here"
 export GROQ_API_URL="https://api.groq.com/openai/v1/chat/completions"
 ```
-
-⚠️ Restart your IDE after setting environment variables
+Restart your IDE after setting environment variables
 
 ---
 
-### 3️⃣ Run Application
+### 3. Run Application
 
 ```bash
 mvn spring-boot:run
@@ -79,7 +78,7 @@ mvn spring-boot:run
 
 ---
 
-### 4️⃣ Access H2 Database
+### 4. Access H2 Database
 
 Open browser:
 
